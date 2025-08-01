@@ -1,40 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy - Expensiyo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expensiyo - Smart Cashbook App</title>
+  <link rel="icon" href="images/fav.png" type="image/png">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: sans-serif;
-      background-color: #fff;
-      color: #222;
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    h1 {
-      color: #1a73e8;
-    }
-    p {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
       line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4CAF50, #2e7d32);
+      color: white;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 30px 20px;
+      flex-wrap: wrap;
+    }
+
+    header img.logo {
+      height: 80px;
+      width: 80px;
+      border-radius: 16px;
+      object-fit: contain;
+      background: white;
+      padding: 5px;
+    }
+
+    header h1 {
+      font-size: 50px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    header .header-text {
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .hero img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .hero-text {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .hero-text h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #4CAF50;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #4CAF50;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .btn:hover {
+      background: #388e3c;
+    }
+
+    .section {
+      margin: 50px 0;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #4CAF50;
+      margin-bottom: 20px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .feature-card img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    .feature-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .download-section {
+      text-align: center;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .download-section img {
+      width: 200px;
+      margin-top: 15px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+    .container h1 {
+      color: #4CAF50;
+    }
+
+    .container p {
+      line-height: 2.0;
+    }
+
+    @media(max-width:768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        margin: 0 0 20px 0;
+      }
     }
   </style>
 </head>
+
 <body>
-  <h1>Privacy Policy</h1>
-  <p><strong>Effective Date:</strong> July 21, 2025</p>
+  <header>
+    <img src="images/logo.png" alt="Expensiyo Logo" class="logo" />
+    <div class="header-text">
+      <h1>Expensiyo</h1>
+      <p>Smart Cashbook & Expense Tracker App</p>
+    </div>
+  </header>
 
-  <p>Expensiyo does not collect or share any personal information.</p>
 
-  <p>Your data is stored locally on your device. If you enable Google Drive backup, your data file (a local backup file of your books and transactions) is securely stored in your Google Drive’s <code>appDataFolder</code>. We do not access, share, or analyze this data.</p>
+  <div class="container">
+    <!-- Hero Section -->
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> July 21, 2025</p>
 
-  <p>We use Google Sign-In only to identify your Google Drive and authorize backup/restore functionality. Your email is not stored or shared.</p>
+    <p>Expensiyo does not collect or share any personal information.</p>
 
-  <p>You can disconnect Google access at any time from your Google account settings.</p>
+    <p>Your data is stored locally on your device. If you enable Google Drive backup, your data file (a local backup
+      file
+      of your books and transactions) is securely stored in your Google Drive’s <code>appDataFolder</code>. We do not
+      access, share, or analyze this data.</p>
 
-  <p>For any questions, please contact us at <strong>amitkumar86877@gmail.com</strong>.</p>
+    <p>We use Google Sign-In only to identify your Google Drive and authorize backup/restore functionality. Your email
+      is
+      not stored or shared.</p>
 
-  <p><a href="index.html">← Back to Home</a></p>
+    <p>You can disconnect Google access at any time from your Google account settings.</p>
+
+    <p>For any questions, please contact us at <strong>amitkumar86877@gmail.com</strong>.</p>
+
+    <p><a href="index.html">← Back to Home</a></p>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p style="text-align:center;">Email: amitkumar86877@gmail.com | Phone: +91-7742286877</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Expensiyo. All Rights Reserved.
+  </footer>
 </body>
+
 </html>
