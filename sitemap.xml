@@ -9,4 +9,11 @@
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://expensiyo.com/privacy-policy.html</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
