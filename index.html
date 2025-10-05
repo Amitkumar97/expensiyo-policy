@@ -2,222 +2,42 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Expensiyo - Smart Cashbook & Expense Tracker App</title>
-  <meta name="description" content="Expensiyo is a smart cashbook and expense tracker app for managing your income and expenses effortlessly. Multi-language support, dark mode, and secure Google Drive backup.">
-  <meta name="keywords" content="Expensiyo, Cashbook, Expense Tracker, Income Tracker, Budget App, Finance App, Google Drive Backup">
-  <meta name="author" content="Amit Kumar">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Expensiyo - Smart Cashbook App">
-  <meta property="og:description" content="Manage your finances smarter with Expensiyo. Track income and expenses, secure backups via Google Drive, and enjoy offline-ready cashbook features.">
+  <title>Expensiyo - Smart Cashbook & Expense Tracker App</title>
+  <meta name="description"
+    content="Expensiyo is a smart cashbook and expense tracker app for managing income and expenses effortlessly. Multi-language support, dark mode, and secure Google Drive backup.">
+  <meta name="keywords"
+    content="Expensiyo, Cashbook, Expense Tracker, Income Tracker, Budget App, Finance App, Google Drive Backup">
+  <meta name="author" content="Amit Kumar">
+  <link rel="canonical" href="https://expensiyo.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Expensiyo - Smart Cashbook & Expense Tracker App">
+  <meta property="og:description"
+    content="Track income and expenses effortlessly with Expensiyo. Secure Google Drive backup, offline-ready, multi-language support.">
   <meta property="og:image" content="https://expensiyo.com/images/logo.png">
   <meta property="og:url" content="https://expensiyo.com/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Expensiyo">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Expensiyo - Smart Cashbook App">
-  <meta name="twitter:description" content="Track income and expenses effortlessly with Expensiyo. Multi-language support, dark mode, and Google Drive backup.">
+  <meta name="twitter:title" content="Expensiyo - Smart Cashbook & Expense Tracker App">
+  <meta name="twitter:description"
+    content="Manage your income and expenses easily with Expensiyo. Offline-ready, dark mode, multi-language, Google Drive backup.">
   <meta name="twitter:image" content="https://expensiyo.com/images/logo.png">
 
   <link rel="icon" href="images/fav.png" type="image/png">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
-
-    header {
-      background: linear-gradient(135deg, #4CAF50, #2e7d32);
-      color: white;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
-      padding: 30px 20px;
-      flex-wrap: wrap;
-    }
-
-    header img.logo {
-      height: 80px;
-      width: 80px;
-      border-radius: 16px;
-      object-fit: contain;
-      background: white;
-      padding: 5px;
-    }
-
-    header h1 {
-      font-size: 50px;
-      margin-bottom: 5px;
-    }
-
-    header p {
-      font-size: 20px;
-      margin-top: 0;
-    }
-
-    header .header-text {
-      text-align: center;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #333;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 18px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 30px auto;
-    }
-
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      flex-wrap: wrap;
-    }
-
-    .hero img {
-      max-width: 400px;
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .hero-text {
-      flex: 1;
-      margin-right: 20px;
-    }
-
-    .hero-text h2 {
-      font-size: 36px;
-      margin-bottom: 15px;
-      color: #4CAF50;
-    }
-
-    .hero-text p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #4CAF50;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    .btn:hover {
-      background: #388e3c;
-    }
-
-    .section {
-      margin: 50px 0;
-    }
-
-    .section h2 {
-      text-align: center;
-      font-size: 32px;
-      color: #4CAF50;
-      margin-bottom: 20px;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .feature-card {
-      background: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    }
-
-    .feature-card img {
-      width: 60px;
-      margin-bottom: 10px;
-    }
-
-    .feature-card h3 {
-      margin-bottom: 10px;
-    }
-
-    .download-section {
-      text-align: center;
-      padding: 30px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .download-section img {
-      width: 200px;
-      margin-top: 15px;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-
-    @media(max-width:768px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .hero-text {
-        margin: 0 0 20px 0;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
   <header>
-    <img src="images/logo.png" alt="Expensiyo Logo - Cashbook App" class="logo" />
-    <div class="header-text">
-      <h1>Expensiyo</h1>
-      <p>Smart Cashbook & Expense Tracker App</p>
-    </div>
+    <img src="images/logo.png" alt="Expensiyo Logo - Cashbook App" loading="lazy" class="logo">
+    <h1>Expensiyo</h1>
+    <p>Smart Cashbook & Expense Tracker App</p>
   </header>
 
   <nav>
@@ -229,65 +49,62 @@
   </nav>
 
   <main class="container">
-    <!-- Hero Section -->
     <section class="hero" aria-label="Hero Section">
       <div class="hero-text">
         <h2>Manage Your Finances Smarter</h2>
-        <p>Expensiyo helps you track your income and expenses effortlessly. Simple, secure, and offline-ready cashbook solution for everyone.</p>
-        <a href="#download" class="btn">Download Now</a>
+        <p>Expensiyo helps you track your income and expenses effortlessly. Offline-ready, multi-language support, dark
+          mode, and Google Drive backup.</p>
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.expensiyo.app" class="btn">Download Now</a>
       </div>
-      <img src="images/How-To-Manage-Field-Employee-Expenses-1.webp" alt="Expensiyo App Screenshot" />
+      <img src="images/How-To-Manage-Field-Employee-Expenses-1.webp" alt="Expensiyo App Screenshot" loading="lazy">
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section">
       <h2>About Expensiyo</h2>
-      <p style="text-align:center; max-width:800px; margin:auto;">
-        Expensiyo is your ultimate companion for managing daily transactions. Whether you're a shopkeeper, small business owner, or an individual, our app ensures your accounts stay organized. Enjoy multi-language support, dark mode, and secure backups via Google Drive.
-      </p>
+      <p>Expensiyo is your ultimate companion for managing daily transactions. Whether you're a shopkeeper, small
+        business owner, or an individual, our app keeps your accounts organized with multi-language support, dark mode,
+        and Google Drive backups.</p>
     </section>
 
-    <!-- Features Section -->
     <section id="features" class="section">
       <h2>Features You'll Love</h2>
       <div class="features-grid">
         <article class="feature-card">
-          <img src="images/ledger.png" alt="Book Management Icon">
+          <img src="images/ledger.png" alt="Book Management Icon" loading="lazy">
           <h3>Easy Book Management</h3>
           <p>Create and manage multiple cashbooks easily.</p>
         </article>
         <article class="feature-card">
-          <img src="images/money.png" alt="Transaction Tracking Icon">
+          <img src="images/money.png" alt="Transaction Tracking Icon" loading="lazy">
           <h3>Track Transactions</h3>
           <p>Monitor income & expenses with detailed reports.</p>
         </article>
         <article class="feature-card">
-          <img src="images/icons8-dark-mode-100.png" alt="Theme Icon">
+          <img src="images/icons8-dark-mode-100.png" alt="Theme Icon" loading="lazy">
           <h3>Dark/Light Mode</h3>
-          <p>Switch themes for a better experience.</p>
+          <p>Switch themes for a comfortable experience.</p>
         </article>
         <article class="feature-card">
-          <img src="images/cloud.png" alt="Cloud Backup Icon">
+          <img src="images/cloud.png" alt="Cloud Backup Icon" loading="lazy">
           <h3>Cloud Backup</h3>
           <p>Secure your data with Google Drive backup.</p>
         </article>
       </div>
     </section>
 
-    <!-- Download Section -->
     <section id="download" class="download-section">
       <h2>Get Expensiyo Now</h2>
       <p>Available soon on Google Play Store</p>
       <a target="_blank" href="https://play.google.com/store/apps/details?id=com.expensiyo.app">
-        <img src="images/Google_Play_Store_badge_EN.svg" alt="Download on Google Play Store">
+        <img src="images/Google_Play_Store_badge_EN.svg" alt="Download on Google Play Store" loading="lazy">
       </a>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section">
       <h2>Contact Us</h2>
       <address style="text-align:center;">
-        Email: <a href="mailto:amitkumar86877@gmail.com">amitkumar86877@gmail.com</a> | Phone: <a href="tel:+917742286877">+91-7742286877</a>
+        Email: <a href="mailto:amitkumar86877@gmail.com">amitkumar86877@gmail.com</a><br>
+        Phone: <a href="tel:+917742286877">+91-7742286877</a>
       </address>
     </section>
   </main>
