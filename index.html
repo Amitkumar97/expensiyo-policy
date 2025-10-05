@@ -31,6 +31,58 @@
 
   <link rel="icon" href="images/fav.png" type="image/png">
   <link rel="stylesheet" href="css/home.css">
+
+  <!-- Structured Data: Mobile Application -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Expensiyo",
+    "url": "https://expensiyo.com/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "ANDROID",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://play.google.com/store/apps/details?id=com.expensiyo.app"
+    },
+    "description": "Expensiyo is a smart cashbook and expense tracker app. Track income & expenses, use multi-language support, dark mode, and secure Google Drive backup.",
+    "image": "https://expensiyo.com/images/logo.png"
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Expensiyo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Expensiyo is a smart cashbook and expense tracker app for managing income and expenses effortlessly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which platforms support Expensiyo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Expensiyo is currently available on Android via Google Play Store."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data safe on Expensiyo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Expensiyo respects user privacy. All data is stored locally with optional secure Google Drive backup. No personal data is collected."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -105,8 +157,37 @@
       <address style="text-align:center;">
         Email: <a href="mailto:amitkumar86877@gmail.com">amitkumar86877@gmail.com</a><br>
         Phone: <a href="tel:+917742286877">+91-7742286877</a>
+        <p>Or</p>
+        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc4q8QHJ9HNkEbcn9z87k3Fyyr0NYNMXwGuZkjAUVqiIC6gZQ/viewform?usp=dialog">Click Here</a>
       </address>
     </section>
+
+    <section id="faq" class="section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>What is Expensiyo?</h3>
+        <p>Expensiyo is a smart cashbook and expense tracker app for managing income and expenses effortlessly. It’s
+          offline-ready, supports multiple languages, dark mode, and secure Google Drive backup.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Which platforms support Expensiyo?</h3>
+        <p>Expensiyo is currently available on Android via Google Play Store.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is my data safe on Expensiyo?</h3>
+        <p>Yes! Expensiyo respects your privacy. All data stays on your device, with optional secure Google Drive
+          backup. No personal data is collected.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do I need to create an account to use Expensiyo?</h3>
+        <p>No, Expensiyo works entirely without sign-ups. Your data remains private and local unless you choose to back
+          it up to Google Drive.</p>
+      </div>
+    </section>
+
   </main>
 
   <footer>
