@@ -2,197 +2,346 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Expensiyo - Smart Cashbook & Expense Tracker App</title>
-  <meta name="description"
-    content="Expensiyo is a smart cashbook and expense tracker app for managing income and expenses effortlessly. Multi-language support, dark mode, and secure Google Drive backup.">
-  <meta name="keywords"
-    content="Expensiyo, Cashbook, Expense Tracker, Income Tracker, Budget App, Finance App, Google Drive Backup">
-  <meta name="author" content="Amit Kumar">
-  <link rel="canonical" href="https://expensiyo.com/">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Expensiyo - Smart Cashbook & Expense Tracker App">
-  <meta property="og:description"
-    content="Track income and expenses effortlessly with Expensiyo. Secure Google Drive backup, offline-ready, multi-language support.">
-  <meta property="og:image" content="https://expensiyo.com/images/logo.png">
-  <meta property="og:url" content="https://expensiyo.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Expensiyo">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Expensiyo - Smart Cashbook & Expense Tracker App">
-  <meta name="twitter:description"
-    content="Manage your income and expenses easily with Expensiyo. Offline-ready, dark mode, multi-language, Google Drive backup.">
-  <meta name="twitter:image" content="https://expensiyo.com/images/logo.png">
-
-  <link rel="icon" href="images/fav.png" type="image/png">
-  <link rel="stylesheet" href="css/home.css">
-
-  <!-- Structured Data: Mobile Application -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MobileApplication",
-    "name": "Expensiyo",
-    "url": "https://expensiyo.com/",
-    "applicationCategory": "FinanceApplication",
-    "operatingSystem": "ANDROID",
-    "offers": {
-      "@type": "Offer",
-      "url": "https://play.google.com/store/apps/details?id=com.expensiyo.app"
-    },
-    "description": "Expensiyo is a smart cashbook and expense tracker app. Track income & expenses, use multi-language support, dark mode, and secure Google Drive backup.",
-    "image": "https://expensiyo.com/images/logo.png"
-  }
-  </script>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is Expensiyo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Expensiyo is a smart cashbook and expense tracker app for managing income and expenses effortlessly."
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Expensiyo - Smart Expense Management App | Track Your Spending</title>
+    <meta name="description" content="Expensiyo is a powerful expense management mobile app with multi-language support and customizable themes. Create expense books, track transactions, and manage your finances effortlessly.">
+    <meta name="keywords" content="expense tracker, expense management, budget app, financial app, money tracker, spending tracker, expense book, multi-language app">
+    <meta name="author" content="Expensiyo">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Expensiyo - Smart Expense Management App">
+    <meta property="og:description" content="Track your expenses, create multiple books, and manage your finances with our feature-rich mobile app supporting multiple languages and themes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://expensiyo.com">
+    <meta property="og:image" content="https://expensiyo.com/assets/og-image.png">
+    <meta property="og:site_name" content="Expensiyo">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Expensiyo - Smart Expense Management App">
+    <meta name="twitter:description" content="Track your expenses, create multiple books, and manage your finances with our feature-rich mobile app.">
+    <meta name="twitter:image" content="https://expensiyo.com/assets/twitter-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./public/assets/fav.png" type="image/png">
+    <link rel="apple-touch-icon" href="./public/assets/fav.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://expensiyo.com">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Expensiyo",
+        "description": "Smart expense management mobile app with multi-language support and customizable themes",
+        "url": "https://expensiyo.com",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Android",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "ratingCount": "19"
         }
-      },
-      {
-        "@type": "Question",
-        "name": "Which platforms support Expensiyo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Expensiyo is currently available on Android via Google Play Store."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is my data safe on Expensiyo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes! Expensiyo respects user privacy. All data is stored locally with optional secure Google Drive backup. No personal data is collected."
-        }
-      }
-    ]
-  }
-  </script>
+    }
+    </script>
 </head>
 
 <body>
-  <header>
-    <img src="images/logo.png" alt="Expensiyo Logo - Cashbook App" loading="lazy" class="logo">
-    <h1>Expensiyo</h1>
-    <p>Smart Cashbook & Expense Tracker App</p>
-  </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">📊</div>
+                <h2>Expensiyo</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#screenshots" class="nav-link">Screenshots</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#languages" class="nav-link">Languages</a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.expensiyo.app" class="nav-link">Download</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#features">Features</a>
-    <a href="#download">Download</a>
-    <a href="#contact">Contact</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-  </nav>
-
-  <main class="container">
-    <section class="hero" aria-label="Hero Section">
-      <div class="hero-text">
-        <h2>Manage Your Finances Smarter</h2>
-        <p>Expensiyo helps you track your income and expenses effortlessly. Offline-ready, multi-language support, dark
-          mode, and Google Drive backup.</p>
-        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.expensiyo.app" class="btn">Download Now</a>
-      </div>
-      <img src="images/How-To-Manage-Field-Employee-Expenses-1.webp" alt="Expensiyo App Screenshot" loading="lazy">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Take Control of Your <span class="gradient-text">Expenses</span>
+                </h1>
+                <p class="hero-description">
+                    Expensiyo is the ultimate expense management app that helps you track spending, 
+                    create multiple expense books, and manage your finances with ease. Available in 
+                    multiple languages with beautiful themes.
+                </p>
+                <div class="hero-buttons">
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.expensiyo.app" class="btn btn-primary">
+                        <span>Download Now</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 14L6 10H8V6H12V10H14L10 14Z" fill="currentColor"/>
+                            <path d="M4 16H16V18H4V16Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Downloads</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5.0★</span>
+                        <span class="stat-label">App Rating</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <img src="./public/assets/screenshot1.jpg" alt="Expensiyo App Dashboard" class="app-screenshot">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="about" class="section">
-      <h2>About Expensiyo</h2>
-      <p>Expensiyo is your ultimate companion for managing daily transactions. Whether you're a shopkeeper, small
-        business owner, or an individual, our app keeps your accounts organized with multi-language support, dark mode,
-        and Google Drive backups.</p>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features for Smart Money Management</h2>
+                <p>Everything you need to track, manage, and optimize your expenses</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Expense Tracking</h3>
+                    <p>Easily add and categorize your expenses with our intuitive interface. Track every penny with detailed transaction records and real-time balance updates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Multiple Books</h3>
+                    <p>Create separate expense books for different purposes - personal, business, travel, or any custom category you need. Manage multiple financial streams effortlessly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Smart Reports</h3>
+                    <p>Get detailed insights with daily balance reports, category-wise expenses, payment mode summaries, and downloadable PDF reports for better financial planning.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Payment Methods</h3>
+                    <p>Track expenses across multiple payment methods including Cash, Card, UPI, and more. Get comprehensive summaries of your spending patterns.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Multi-Language Support</h3>
+                    <p>Use Expensiyo in your preferred language with support for 15+ languages including English, Hindi, Spanish, French, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Beautiful Themes</h3>
+                    <p>Personalize your experience with multiple theme options including light, dark, and colorful themes to match your style and preferences.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="features" class="section">
-      <h2>Features You'll Love</h2>
-      <div class="features-grid">
-        <article class="feature-card">
-          <img src="images/ledger.png" alt="Book Management Icon" loading="lazy">
-          <h3>Easy Book Management</h3>
-          <p>Create and manage multiple cashbooks easily.</p>
-        </article>
-        <article class="feature-card">
-          <img src="images/money.png" alt="Transaction Tracking Icon" loading="lazy">
-          <h3>Track Transactions</h3>
-          <p>Monitor income & expenses with detailed reports.</p>
-        </article>
-        <article class="feature-card">
-          <img src="images/icons8-dark-mode-100.png" alt="Theme Icon" loading="lazy">
-          <h3>Dark/Light Mode</h3>
-          <p>Switch themes for a comfortable experience.</p>
-        </article>
-        <article class="feature-card">
-          <img src="images/cloud.png" alt="Cloud Backup Icon" loading="lazy">
-          <h3>Cloud Backup</h3>
-          <p>Secure your data with Google Drive backup.</p>
-        </article>
-      </div>
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2>See Expensiyo in Action</h2>
+                <p>Beautiful interface designed for effortless expense management</p>
+            </div>
+            <div class="screenshots-grid">
+                <div class="screenshot-card">
+                    <div class="screenshot-mockup">
+                        <img src="./public/assets/screenshot1.jpg" alt="Dashboard Overview" class="screenshot-img">
+                    </div>
+                    <h4>Dashboard Overview</h4>
+                    <p>Get a quick overview of your total balance and manage multiple expense books</p>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-mockup">
+                        <img src="./public/assets/screenshot2.jpg" alt="Transaction History" class="screenshot-img">
+                    </div>
+                    <h4>Transaction History</h4>
+                    <p>View detailed transactions with balance summaries and easy cash in/out options</p>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-mockup">
+                        <img src="./public/assets/screenshot3.jpg" alt="Smart Reports" class="screenshot-img">
+                    </div>
+                    <h4>Smart Reports</h4>
+                    <p>Analyze your spending with comprehensive reports and category-wise breakdowns</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="download" class="download-section">
-      <h2>Get Expensiyo Now</h2>
-      <p>Available soon on Google Play Store</p>
-      <a target="_blank" href="https://play.google.com/store/apps/details?id=com.expensiyo.app">
-        <img src="images/Google_Play_Store_badge_EN.svg" alt="Download on Google Play Store" loading="lazy">
-      </a>
+    <!-- Languages & Themes Section -->
+    <section id="languages" class="languages-themes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Global & Personalized Experience</h2>
+                <p>Use Expensiyo in your language with your preferred theme</p>
+            </div>
+            <div class="lt-grid">
+                <div class="languages-card">
+                    <h3>🌍 Multiple Languages</h3>
+                    <div class="languages-list">
+                        <span class="language-tag">English</span>
+                        <span class="language-tag">हिन्दी</span>
+                        <span class="language-tag">ਪੰਜਾਬੀ</span>
+                        <span class="language-tag">ગુજરાતી</span>
+                        <span class="language-tag">বাংলা</span>
+                        <span class="language-tag">मराठी</span>
+                    </div>
+                </div>
+                <div class="themes-card">
+                    <h3>🎨 Beautiful Themes</h3>
+                    <div class="themes-preview">
+                        <div class="theme-option light-theme">
+                            <div class="theme-preview light-preview"></div>
+                            <span>Light</span>
+                        </div>
+                        <div class="theme-option dark-theme">
+                            <div class="theme-preview dark-preview"></div>
+                            <span>Dark</span>
+                        </div>
+                        <div class="theme-option blue-theme">
+                            <div class="theme-preview sunset-preview"></div>
+                            <span>Sunset</span>
+                        </div>
+                        <div class="theme-option nature-theme">
+                            <div class="theme-preview midnight-purple-preview"></div>
+                            <span>Midnight Purple</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="section">
-      <h2>Contact Us</h2>
-      <address style="text-align:center;">
-        Email: <a href="mailto:amitkumar86877@gmail.com">amitkumar86877@gmail.com</a><br>
-        Phone: <a href="tel:+917742286877">+91-7742286877</a>
-        <p>Or</p>
-        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc4q8QHJ9HNkEbcn9z87k3Fyyr0NYNMXwGuZkjAUVqiIC6gZQ/viewform?usp=dialog">Contact Using Google Forms</a>
-      </address>
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2>Ready to Take Control of Your Expenses?</h2>
+                <p>Join 100+ users who are already managing their finances smarter with Expensiyo</p>
+                <div class="download-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.expensiyo.app" class="download-btn google-play" target="_blank" rel="noopener">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z'/%3E%3C/svg%3E" alt="Google Play">
+                        <div class="download-text">
+                            <span class="download-label">Get it on</span>
+                            <span class="download-store">Google Play</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="download-stats">
+                    <div class="download-stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label-footer">Downloads</span>
+                    </div>
+                    <div class="download-stat">
+                        <span class="stat-number">5.0/5</span>
+                        <span class="stat-label-footer">Rating (19 users)</span>
+                    </div>
+                    <div class="download-stat">
+                        <span class="stat-number">Free</span>
+                        <span class="stat-label-footer">To Use</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="faq" class="section">
-      <h2>Frequently Asked Questions</h2>
-      <div class="faq-item">
-        <h3>What is Expensiyo?</h3>
-        <p>Expensiyo is a smart cashbook and expense tracker app for managing income and expenses effortlessly. It’s
-          offline-ready, supports multiple languages, dark mode, and secure Google Drive backup.</p>
-      </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">📊</div>
+                        <h3>Expensiyo</h3>
+                    </div>
+                    <p>Smart expense management for everyone</p>
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61579337847454" aria-label="Facebook">📘</a>
+                        <a target="_blank" aria-label="https://www.instagram.com/expensiyo">📷</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#screenshots">Screenshots</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Expensiyo. All rights reserved.</p>
+                <p>Made with ❤️ for better financial management</p>
+            </div>
+        </div>
+    </footer>
 
-      <div class="faq-item">
-        <h3>Which platforms support Expensiyo?</h3>
-        <p>Expensiyo is currently available on Android via Google Play Store.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Is my data safe on Expensiyo?</h3>
-        <p>Yes! Expensiyo respects your privacy. All data stays on your device, with optional secure Google Drive
-          backup. No personal data is collected.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Do I need to create an account to use Expensiyo?</h3>
-        <p>No, Expensiyo works entirely without sign-ups. Your data remains private and local unless you choose to back
-          it up to Google Drive.</p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    © 2025 Expensiyo. All Rights Reserved.
-  </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
